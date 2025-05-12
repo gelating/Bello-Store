@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Rowdies:wght@300;400;700&display=swap');
+.navbar{
+    background: #ffe54f;
+    font-family: "Cascadia Mono", sans-serif;
+    height: 90px;
+}
+.navbar-brand{
+  font-family: "Boldonse", system-ui;
+  color: rgb(57, 56, 52);
+  margin-right: 50px;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #ffe54f;
+  color: #343131;
+  font-weight: bold;
+}
+
+.dropdown-menu .dropdown-item:active {
+  background-color: #e3aa00;
+  color: white;
+}
+.cart-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.cart-btn:hover svg {
+  fill: rgb(227, 170, 0); 
+}
+li{
+  margin-right: 20px;
+}
+main {
+  margin-top: 30px;
+  background-color: #ffe75f;
+  border-radius: 5px;
+  display: flex;
+}
+main h1{
+  font-family: "Righteous", sans-serif;
+  color: #343131;
+}
+main p{
+    font-family: "Cascadia Mono", sans-serif;
+    color: rgb(54, 54, 54);
+    font-size: 50px;
+}
+main img{
+  height: 500px;
+}
+section{
+  margin-top: 50px;
+}
+section h2{
+  font-family: "Righteous", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+.people{
+  display: flex;
+  padding: 30px;
+}
+.people h5{
+  font-family: "Righteous", sans-serif;
+}
+.people p{
+  font-family: "Cascadia Mono", sans-serif;
+}
+footer{
+  display: flex;
+  background-color: #222221;
+  font-family: "Cascadia Mono", sans-serif;
+}
+section{
+  background-color: #ffee8d;
+}
+section p{
+  font-family: "Cascadia Mono", sans-serif;
+}
+</style>
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</head>
+<body>
+<!-- Navigate -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="Home.html">BeLLo</a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="About-Us.html">About Us</a>
+          </li>
+          
+        </ul>
+  
+        <form class="d-flex" id="search-form">
+          <input class="form-control me-2" type="search" id="searchInput" placeholder="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+  
+        <button class="btn cart-btn ms-3" id="cartButton">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 width="40" height="40" 
+                 fill="currentColor" 
+                 class="bi bi-cart-fill" 
+                 viewBox="0 0 30 16">
+                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+    </div>
+  </nav>
+
+<!--body-->
+<main class="about-us container p-4 rounded"> 
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h1 class="display-4 fst-italic">About us</h1> 
+      <p class="lead my-3">
+        Poopaye! We da Bello Squad-small but mighty! 
+        Worky-work in lab-lab, make boom-boom, kaboom, and banana tech! 
+        Every day go bapple-crazy with laser gelato, jelly guns, and fart blasters. 
+        Bello brains go tick-tock—buildy build new flibber-flabber gizmos and doodads for da world. 
+        Sometimes we fight evil, sometimes we nap-nap with teddy Tim. But always, we laugh-laugh and dance-dance. 
+        Love banana? Bello! 
+      </p> 
+    </div> 
+    <div class="col-lg-6 text-center">
+      <img src="https://grantland.com/wp-content/uploads/2015/07/minions_behind.jpg" alt="minion butts" 
+           class="img-fluid rounded" 
+           style="max-height: 500px; object-fit: cover;">
+    </div>
+  </div>
+</main>
+
+  <!--About the Creators-->
+<section class="container">
+  <h2 class="display-4 fst-italic">MEET THE BELLO SQUAD</h2> 
+  <div class="people container">
+    <div class="card" style="width: 30rem;">
+        <img src="gueco.jpg" class="card-img-top" alt="Raine Gueco pic">
+        <div class="card-body">
+          <h5 class="card-title">Raphael Raine Gueco</h5>
+          <p class="card-text">Researcher/Designer</p>
+        </div>
+      </div>
+      <div class="card" style="width: 30rem;">
+        <img src="angela.jpg" class="card-img-top" alt="Angela Ting pic">
+        <div class="card-body">
+          <h5 class="card-title">Angela Joyce Ting</h5>
+          <p class="card-text">Designer/Coder</p>
+        </div>
+      </div>
+      <div class="card" style="width: 30rem;">
+        <img src="smc.jpg" class="card-img-top" alt="Sean Castillo pic">
+        <div class="card-body">
+          <h5 class="card-title">Sean Marcus Castillo</h5>
+          <p class="card-text">Main Coder/Designer</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+  <!--References-->
+  <section class="about-us container p-4 rounded"> 
+        <h2 class="display-4 fst-italic">REFERENCES</h2> 
+        <p class="lead my-3">
+          CODE: <br>
+          Contributors, M. O. J. T. a. B. (n.d.). Examples. https://getbootstrap.com/docs/5.3/examples/<br>
+          <br><br>PICTURES: <br>
+          https://grantland.com/wp-content/uploads/2015/07/minions_behind.jpg<br>
+          https://www.southernliving.com/thmb/EM-f8L_T36WluwBtBkhD4gnCKg8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/How_To_Freeze_Bananas_023-71e81efacb6a4d87a3596b8c2c519884.jpg <br>
+          https://i.ebayimg.com/00/s/OTA1WDE1MDA=/z/eQIAAOSwFlVhJ5hh/$_57.JPG?set_id=8800005007 <br>
+          https://i.pinimg.com/736x/81/4b/03/814b03147c2114c155bc06f1daae6c71.jpg <br>
+          https://rukminim2.flixcart.com/image/850/1000/umbrella/b/f/y/bonzeal-banana-21-25-original-imaegugyhny7ybgh.jpeg?q=90&crop=false <br>
+          https://i.ebayimg.com/images/g/ebMAAOSwotVkYlFn/s-l1200.jpg <br>
+          https://www.gerberchildrenswear.com/cdn/shop/products/tgyd9tu3obyukkbc7nii_grande.jpg?v=1706928853 <br>
+          https://m.media-amazon.com/images/I/61dDCo4Fc8L._AC_UY1000_.jpg <br>
+          https://media.kohlsimg.com/is/image/kohls/5232693?wid=620&hei=620&op_sharpen=1 <br>
+          https://down-ph.img.susercontent.com/file/sg-11134201-7qvdh-lkatgmlhbxjmb9 <br>
+          https://m.media-amazon.com/images/I/51JJnUYuvpL._AC_SL1080_.jpg <br>
+          https://www.hollywoodreporter.com/wp-content/uploads/2013/08/fart_blaster_toy_a_l.jpg <br>
+          https://static.wikia.nocookie.net/despicableme/images/8/81/Freeze_Ray_model.jpg/revision/latest?cb=20220804043324 <br>
+          https://www.etscablecomponents.com/wp-content/uploads/2014/10/bp-1-a-adjustable-banana-peeler_5.jpg <br>
+          https://cdn.vox-cdn.com/thumbor/ZA4MqHwTxPZFShuKp5HsmBJkXxo=/0x0:800x600/1400x1400/filters:focal(0x0:800x600):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/46709220/minion-toy.0.0.jpg <br>
+          https://media.istockphoto.com/id/538160136/photo/golden-banana-3d-rendering-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=MvHJwa6pQv4V4inWVhdxHU_nYbEfp-FyZRMT-nmZeI4= <br>
+          https://cdna.artstation.com/p/assets/images/images/027/168/120/large/ilya-prokhorov-8-rvdygmeeu.jpg?1590770560 <br>
+          https://orangetrackdiecast.com/wp-content/uploads/2018/09/grumobile-18nm-hwscreentime-1200px.png <br>
+          https://cdnb.artstation.com/p/assets/images/images/011/484/681/large/bernard-de-lagarde-pistorender2.jpg?1529839196 <br>
+          https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/2016_Harvest_Moon_penumbral_eclipse_at_18-54_UTC_%2830434544401%29.jpg/1200px-2016_Harvest_Moon_penumbral_eclipse_at_18-54_UTC_%2830434544401%29.jpg <br>
+
+
+        </p> 
+  </section>
+  
+
+<!-- Footer -->
+<footer class="text-white pt-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-2">💥 Kaboom! You reached the end. Banana-powered since forever. 🍌</p>
+    <p class="mb-3">Made with <span style="color: red;">❤</span> and jelly guns by the Bello Squad.</p>
+    
+    <button onclick="scrollToTop()" class="btn btn-warning mb-3">
+      ⬆️ Go Back to Top
+    </button>
+
+    <hr class="border-light" style="opacity: 0.2;">
+    <small class="d-block pb-3">&copy; 2025 Bello Inc. All rights reserved. No bananas were harmed. 🍌</small>
+  </div>
+</footer>
+</body>
+</html>
