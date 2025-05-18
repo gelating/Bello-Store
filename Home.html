@@ -284,7 +284,6 @@ function scrollToTop() {
   const cartTotal = document.getElementById('cart-total');
   const custOrder = document.getElementById('cust_order');
 
-  // Display products
       function displayProducts() {
   const productList = document.getElementById('product-list');
   productList.innerHTML = ''; // Clear existing products
@@ -292,11 +291,9 @@ function scrollToTop() {
   products.forEach((product, idx) => {
     const card = document.createElement('div');
 
-    // Add Bootstrap flex to the column so the card can stretch
     card.className = 'col-md-4 mb-4 d-flex';
     card.setAttribute('data-aos', 'fade-up');
 
-    // Make the card fill height and structure body
     card.innerHTML = `
       <div class="card h-100">
         <img src="${product.image}" alt="${product.name}">
